@@ -1,0 +1,2 @@
+<h2> Uhul, Como AJAX é legal </h2>
+<p> Esse conteudo foi carregado externamente</p>

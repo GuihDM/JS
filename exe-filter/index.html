@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            
+        }
+        input {
+            margin: 20px;
+            padding: 20px;
+        }
+        table{
+            margin: auto;
+            width: 800px;
+            border-collapse: collapse;
+            border: 1px solid black;
+            
+        }
+        th{
+            border: 1px solid black;
+            padding: 15px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        ul {
+            margin-left: 5%;
+            text-align: left;
+            
+        }
+    </Style>
+</head>
+<body>
+
+    <input type="text" placeholder="Buscar na Tabela" id="busca">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Email</th>
+
+
+
+            </tr>
+
+
+
+        </thead>
+        <tbody id="minhatabela">
+            <tr>
+                <td>Dimitri</td>
+                <td>Teixeira</td>
+                <td>dimitri@exemplo.com</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>da Silva</td>
+                <td>Maria@exemplo.com</td>
+            </tr>
+            <tr>
+                <td>Julia</td>
+                <td>Santos</td>
+                <td>july@teste.com</td>
+            </tr>
+            <tr>
+                <td>javascript</td>
+                <td>jQuery</td>
+                <td>kkkk@teste.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    
+    <input type="text" id="buscalista" placeholder="Buscar na Lista"> 
+
+
+    <ul id="minhalista">
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Alface</li>
+        <li>Cebola</li>
+    </ul>
+
+
+    <script src="../jQuery/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#busca').on('keyup', function () {
+                var valor = $(this).val().toLowerCase();
+
+                $('#minhatabela tr').filter(function(){
+                    $(this).toggle($(this).text().toLowerCase().indexOf(valor) > -1)
+                })
+
+            });
+           $('#buscalista').keyup(function () {
+                var valor = $(this).val().toLowerCase();
+
+                $('#minhalista li').filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(valor) > -1);
+               })
+           })
+        });
+
+
+    </script>
+
+
+    
+</body>
+</html>

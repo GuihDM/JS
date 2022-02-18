@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <style>
+        body {
+            text-align: center;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hora do dia</h1>
+    </header>
+    
+    <section>
+        <div id="msg">
+            aqui vai aparecer a mensagem
+        </div>
+        <div  id="foto">
+            <img class="img">
+        </div>
+
+
+
+    </section>
+
+    <button id="botao1">Modificar CSS</button>
+    <button id="botao2">Modificar CSS h1</button>
+    <button id="botao3">Esvaziar CSS h1</button>
+    
+    <footer><p>&copy; @gui.dm_</p></footer>
+
+    <script src="../jQuery/jquery-3.6.0.js"></script>
+
+    <script>
+
+    $('#botao1').click(function(){ 
+        $('body').css('background-color', 'yellow');
+    })
+
+    $('#botao2').click(function(){
+        $('h1').css('color', 'cyan').css( 'font-size', '4em');
+    })
+
+    $('#botao3').click(function(){
+        $('section').empty();
+
+    })
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
