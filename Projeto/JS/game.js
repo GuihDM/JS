@@ -104,6 +104,7 @@ $('#confirm').click(function () {
             }
             else {
                 console.log('Errrrrouuuuuu!!')
+                $('#quiz').attr('data-status', 'travado');
                 $('#' + respocerta).addClass('correta');
                 $('#' + respostaescolhida).removeClass('selecionada');
                 $('#' + respostaescolhida).addClass('errada');
