@@ -35,7 +35,7 @@ function gerarpergunta(maxperguntas) {
     //toFixed = retirar numeros decimais
     aleatorio = Number(aleatorio);
     //Converter para número
-    console.log(aleatorio);
+    console.log('A pergunta sorteada foi' + aleatorio);
 
     //verificar se a pergunta sorteada ja foi feita
     if(!perguntasfeitas.includes(aleatorio)){
@@ -83,10 +83,14 @@ function gerarpergunta(maxperguntas) {
 }
 
 $('.resposta').click(function () {
+    if($("#quiz").attr('data-status') !== 'travado') {
+
+    
     resetabotoes();
     //Adicionar a classe selecionada
     $(this).addClass('selecionada');
-})
+}
+});
 
 $('#confirm').click(function () {
     //Indice da pergunta
@@ -99,12 +103,13 @@ $('#confirm').click(function () {
             var respostaescolhida = $(this).attr('id');
 
             if (respocerta == respostaescolhida) {
-                alert('Aceertou Miseravee!');
+                console.log('Aceertou Miseravee!');
                 proximapergunta(); 
             }
             else {
                 console.log('Errrrrouuuuuu!!')
                 $('#quiz').attr('data-status', 'travado');
+                $('#confirm').addClass('oculto');
                 $('#' + respocerta).addClass('correta');
                 $('#' + respostaescolhida).removeClass('selecionada');
                 $('#' + respostaescolhida).addClass('errada');
@@ -120,11 +125,14 @@ $('#confirm').click(function () {
 });
 
 function newgame() {
+    $('#quiz').attr('data-status', 'ok');
     perguntasfeitas = [];
     resetabotoes();
     gerarpergunta(qtdperguntas);
     $('#quiz').removeClass('oculto');
     $('#status').addClass('oculto');
+    $('#confirm').removeClass('oculto');
+
 
 }
 
