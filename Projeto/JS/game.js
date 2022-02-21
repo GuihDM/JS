@@ -35,7 +35,10 @@ correta: "resp3"},
 {pergunta: "Qual foi o primeiro filme de animação a ser indicado ao Oscar de Melhor Filme?",
 respostas: ["Bambi", "A pequena sereia", "A viagem de Chihiro", "A bela e a fera"],
 correta: "resp3"},
-
+//Pergunta 8
+{pergunta: "Qual destes musicais indicados ao Oscar ganhou por Melhor Filme?",
+respostas: ["O magico de OZ", "La La Land", "Cabaret", "Amor, Sublime Amor"],
+correta: "resp0"},
 
 
 
