@@ -20,21 +20,21 @@ const perguntas = [
     respostas: ["html", "JavaScript", "c++", "php"],
     correta: "resp0"},
 //Pergunta 4
-{pergunta: "Quais Dessas lingaugens é considerada uma linguagem de marcação",
-respostas: ["html", "JavaScript", "c++", "php"],
+{pergunta: "Qual criança de 'A Fantástica Fábrica de Chocolate' achou o primeiro Bilhete Dourado?",
+respostas: ["Augustus Gloop", "Veruca Salt", "Violet Beauregarde", "Mike Teavee"],
 correta: "resp0"},
 //Pergunta 5
-{pergunta: "Quais Dessas lingaugens é considerada uma linguagem de marcação",
-respostas: ["html", "JavaScript", "c++", "php"],
-correta: "resp0"},
+{pergunta: "Qual destes filmes da Disney foi lançado primeiro?",
+respostas: ["Pocahontas", "O Rei Leão", "Mulan", "Toy Story"],
+correta: "resp1"},
 //Pergunta 6
-{pergunta: "Quais Dessas lingaugens é considerada uma linguagem de marcação",
-respostas: ["html", "JavaScript", "c++", "php"],
-correta: "resp0"},
+{pergunta: "Qual destes personagens terminou o filme/franquia ainda vivo?",
+respostas: ["Bill Murray (zumbilandia", "Dobby", "Jenny (Forest Gump", "Xerife Dewey Riley (Panico)"],
+correta: "resp3"},
 //Pergunta 7
-{pergunta: "Quais Dessas lingaugens é considerada uma linguagem de marcação",
-respostas: ["html", "JavaScript", "c++", "php"],
-correta: "resp0"},
+{pergunta: "Qual foi o primeiro filme de animação a ser indicado ao Oscar de Melhor Filme?",
+respostas: ["Bambi", "A pequena sereia", "A viagem de Chihiro", "A bela e a fera"],
+correta: "resp3"},
 
 
 
