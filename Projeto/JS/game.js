@@ -19,13 +19,30 @@ const perguntas = [
     {pergunta: "Quais Dessas lingaugens é considerada uma linguagem de marcação",
     respostas: ["html", "JavaScript", "c++", "php"],
     correta: "resp0"},
+//Pergunta 4
+{pergunta: "Quais Dessas lingaugens é considerada uma linguagem de marcação",
+respostas: ["html", "JavaScript", "c++", "php"],
+correta: "resp0"},
+//Pergunta 5
+{pergunta: "Quais Dessas lingaugens é considerada uma linguagem de marcação",
+respostas: ["html", "JavaScript", "c++", "php"],
+correta: "resp0"},
+//Pergunta 6
+{pergunta: "Quais Dessas lingaugens é considerada uma linguagem de marcação",
+respostas: ["html", "JavaScript", "c++", "php"],
+correta: "resp0"},
+//Pergunta 7
+{pergunta: "Quais Dessas lingaugens é considerada uma linguagem de marcação",
+respostas: ["html", "JavaScript", "c++", "php"],
+correta: "resp0"},
+
 
 
 
 ]
-
+//Ajustando a variavel a começar contando do 0.
 var qtdperguntas = perguntas.length -1
-
+//Adicionando qtdperguntas como parametro
 gerarpergunta(qtdperguntas);
 
 function gerarpergunta(maxperguntas) {
@@ -41,7 +58,6 @@ function gerarpergunta(maxperguntas) {
     if(!perguntasfeitas.includes(aleatorio)){
         //Inserir na matriz como pergunta feita
         perguntasfeitas.push(aleatorio);
-
         //Preencher o html com os dados da questao sorteada
         var p_selecionada = perguntas[aleatorio].pergunta
         console.log(p_selecionada)
